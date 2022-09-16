@@ -106,5 +106,6 @@ function resetGame() {
    caracteres = 0;
    iniciarJuego();
    document.getElementById('imgState').setAttribute('src',imgEstado+'0.svg');
+   document.getElementById('life').innerHTML = 9;
    document.getElementById('pista').disabled = false;
 }

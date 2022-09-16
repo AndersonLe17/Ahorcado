@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    background-image: url(../img/bg-pizarra.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vh;
+    font-family: 'Indie Flower', cursive;
+    color: white;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 4.5em;
+}
+
+.btn-start {
+    font-size: 2em;
+    color: white;
+    border-color: white;
+}
+
+.btn-start:hover {
+    color: black;
+    border-color: white;
+    background-color: white;
+}
+
+.btn-word {
+    font-size: 2em;
+    color: white;
+    border-color: white;
+}
+
+.btn-word:hover {
+    color: black;
+    border-color: white;
+    background-color: white;
+}
+
+#menu {
+    text-align: center;
+}
+
+#menu img {
+    width: 20rem;
+}
+
+#game {
+    text-align: center;
+}
+
+#game img{
+    width: 17.5rem;
+}
+
+#word {
+    font-size: 2.5em;
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 3.5em;
+    }
+    #word div{
+        font-size: 0.65em;
+    }
+    .btn-word{
+        font-size: 1em;
+    }
+}

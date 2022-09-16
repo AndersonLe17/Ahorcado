@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logoAhorcado.png" type="image/x-icon">
+    <title>Ahorcado</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- My Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <main class="container">
+        <div class="d-block" id="menu">
+            <img src="./assets/img/logoAhorcado.svg" class="mb-4" alt="icono">
+            <h1 class="mb-5">AHORCADO</h1>
+            <button class="btn btn-start px-5" onclick="iniciarJuego()">Iniciar Juego</button>
+        </div>
+        <div class="d-none">
+            
+        </div>
+        <div class="d-none" id="game">
+            <img src="./assets/img/estado0.svg" id="imgState">
+            <div class="d-flex justify-content-around text-center mb-5" id="word">
+            </div>
+            <div class="row justify-content-around text-center gy-3 mx-auto">
+                <div class="col-1 d-none d-lg-block"></div>
+                <button class="col-2 col-lg-1 btn btn-word">A</button>
+                <button class="col-2 col-lg-1 btn btn-word">B</button>
+                <button class="col-2 col-lg-1 btn btn-word">C</button>
+                <button class="col-2 col-lg-1 btn btn-word">D</button>
+                <button class="col-2 col-lg-1 btn btn-word">E</button>
+                <button class="col-2 col-lg-1 btn btn-word">F</button>
+                <button class="col-2 col-lg-1 btn btn-word">G</button>
+                <button class="col-2 col-lg-1 btn btn-word">H</button>
+                <button class="col-2 col-lg-1 btn btn-word">I</button>
+                <button class="col-2 col-lg-1 btn btn-word">J</button>
+                <div class="col-1 d-none d-lg-block"></div>
+                <div class="col-1 d-none d-lg-block"></div>
+                <button class="col-2 col-lg-1 btn btn-word">K</button>
+                <button class="col-2 col-lg-1 btn btn-word">L</button>
+                <button class="col-2 col-lg-1 btn btn-word">M</button>
+                <button class="col-2 col-lg-1 btn btn-word">N</button>
+                <button class="col-2 col-lg-1 btn btn-word">O</button>
+                <button class="col-2 col-lg-1 btn btn-word">P</button>
+                <button class="col-2 col-lg-1 btn btn-word">Q</button>
+                <button class="col-2 col-lg-1 btn btn-word">R</button>
+                <button class="col-2 col-lg-1 btn btn-word">S</button>
+                <button class="col-2 col-lg-1 btn btn-word">T</button>
+                <div class="col-1 d-none d-lg-block"></div>
+                <div class="col-1 d-none d-lg-block"></div>
+                <button class="col-2 col-lg-1 btn btn-word">U</button>
+                <button class="col-2 col-lg-1 btn btn-word">V</button>
+                <button class="col-2 col-lg-1 btn btn-word">W</button>
+                <button class="col-2 col-lg-1 btn btn-word">X</button>
+                <button class="col-2 col-lg-1 btn btn-word">Y</button>
+                <button class="col-2 col-lg-1 btn btn-word">Z</button>
+                <div class="col-1 d-none d-lg-block"></div>
+            </div>
+        </div>
+        <div class="d-none" id="play-reset">
+            <div class="position-absolute top-0 start-0 ms-3 ms-lg-5 mt-5 fs-3">
+                <i class="fa-solid fa-heart text-danger"></i>&nbsp;:&nbsp;<span id="life" class="fw-bold">9</span>
+            </div>
+            <button class="rounded-circle position-absolute bottom-0 mb-5 start-0 ms-3 ms-lg-5 fs-2" onclick="resetGame()">
+                <i class="fa-regular fa-rotate-right p-1 align-middle"></i>
+            </button>
+            <button class="rounded-circle position-absolute bottom-0 mb-5 end-0 me-3 me-lg-5 fs-2" onclick="getPista()" id="pista">
+                <i class="fa-solid fa-magnifying-glass p-1 align-middle"></i>
+            </button>
+        </div>
+    </main>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- My Script -->
+    <script src="./assets/js/script.js"></script>
+    <!-- Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
